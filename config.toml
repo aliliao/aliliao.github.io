@@ -38,7 +38,7 @@ enableEmoji = true
   # 日期格式
   dateFormat = "2006-01-02"
   # 网站图片, 用于 Open Graph 和 Twitter Cards
-  #images = ["/logo.png"]
+  images = ["/img/site/icon.png"]
 
 # 应用图标配置
 [params.app]
@@ -47,7 +47,7 @@ enableEmoji = true
   # 是否隐藏网站图标资源链接
   noFavicon = false
   # 更现代的 SVG 网站图标, 可替代旧的 .png 和 .ico 文件
-  svgFavicon = ""
+  svgFavicon = "/img/site/icon.png"
   # Android 浏览器主题色
   themeColor = "#ffffff"
   # Safari 图标颜色
@@ -142,7 +142,7 @@ enableEmoji = true
       # Gravatar 邮箱，用于优先在主页显示的头像
       gravatarEmail = ""
       # 主页显示头像的 URL
-      avatarURL = "/img/avatar.jpg"
+      avatarURL = "/img/site/avatar.jpg"
       # 主页显示的网站标题 (支持 HTML 格式)
       title = "ALILIAO"
       # 主页显示的网站副标题
@@ -347,11 +347,11 @@ enableEmoji = true
     # 页面 SEO 配置
     [params.page.seo]
       # 图片 URL
-      images = ["/img/avatar.jpg"]
+      images = ["/img/site/avatar.jpg"]
       # 出版者信息
       [params.page.seo.publisher]
         name = ""
-        logoUrl = ""
+        logoUrl = "/img/site/icon.png"
 
   # TypeIt 配置
   [params.typeit]
