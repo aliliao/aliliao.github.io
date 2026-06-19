@@ -20,7 +20,7 @@
    
    点击 **“管理”**，在弹出的 **“远程主机管理”** 对话框中点击 **“新增”**，分别填入唯一名称、远程主机ID和连接密码，最后点击 **“保存”** 并关闭对话框。
 
-   ![](../../../static/img/posts/toolman/remote_host_cfg.png)
+   ![](/img/posts/toolman/remote_host_cfg.png)
 
 2) 远程网络参数配置：
 
@@ -33,14 +33,14 @@
 ## 3. 一些 远程网络/内网穿透 的使用例子
 
 1) 在家或出差时可通过Windows自带的**远程桌面连接**软件远程连接公司电脑，实现远程办公：
-    ![像连接局域网电脑那样远程连接公司电脑](../../../static/img/posts/toolman/remote_net_example_remote_connect.png)
+    ![像连接局域网电脑那样远程连接公司电脑](/img/posts/toolman/remote_net_example_remote_connect.png)
 
 2) 在家或出差时，远程访问公司内网网页：
-    ![远程访问公司内网网页](../../../static/img/posts/toolman/remote_net_example_remote_web.png)
+    ![远程访问公司内网网页](/img/posts/toolman/remote_net_example_remote_web.png)
 
 ## 4. 软件技术支持
 
 获取软件或反馈使用使用建议，请扫码添加作者绿泡泡(备注工具侠)：
-![扫码添加作者微信](../../../static/img/contact/qrcode.png)
+![扫码添加作者微信](/img/contact/qrcode.png)
 
 
