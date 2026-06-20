@@ -20,7 +20,7 @@ jobs:
           dst_token: ${{ secrets.GITEE_TOKEN }}
           account_type: user
           force_update: true
-
+          static_list: "aliliao.github.io" # 仅同步当前这个仓库，不同步其他仓库
       # 2. 自动更新 Gitee Pages（仅在 gh-pages 分支有更新时触发）
       - name: Build Gitee Pages
         if: github.ref == 'refs/heads/gh-pages'
