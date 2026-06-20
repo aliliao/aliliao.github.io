@@ -1,0 +1,32 @@
+name: Sync to Gitee and Deploy Pages
+
+on:
+  push:
+    branches:
+      - master
+      - gh-pages  # 监听 gh-pages 分支的更新，以便在 GitHub Pages 构建完成后同步到 Gitee
+
+jobs:
+  sync-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. 将 GitHub 仓库同步到 Gitee
+      - name: Mirror GitHub repos to Gitee
+        uses: Yikun/hub-mirror-action@master
+        with:
+          src: github/aliliao
+          dst: gitee/aliliao
+          dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
+          dst_token: ${{ secrets.GITEE_TOKEN }}
+          account_type: user
+          force_update: true
+
+      # 2. 自动更新 Gitee Pages（仅在 gh-pages 分支有更新时触发）
+      - name: Build Gitee Pages
+        if: github.ref == 'refs/heads/gh-pages'
+        uses: yanglbme/gitee-pages-action@main
+        with:
+          gitee-username: aliliao
+          gitee-password: ${{ secrets.GITEE_PASSWORD }}
+          gitee-repo: aliliao/aliliao.github.io # 请确认你在 Gitee 上的仓库名是否一致
+          branch: gh-pages
